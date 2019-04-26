@@ -8,4 +8,11 @@ export class PlaceService {
             .then(resolve=>{return resolve.json()})
         );
     }
+
+    getPlaceBySearch(text) {
+        return from(
+            fetch("http://localhost:3000/places?q=" + text)
+                .then(res => { return res.json() })
+        )
+    }
 }

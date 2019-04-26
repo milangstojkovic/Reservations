@@ -1,0 +1,31 @@
+{
+    "Places": [
+      { "id": 1, "type": "kafana", "name": "Kafana1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":4 },
+      { "id": 2, "type": "kafic", "name": "Kafic1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5 },
+      { "id": 3, "type": "restoran", "name": "Restoran1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":4 },
+      { "id": 4, "type": "kafana", "name": "Kafana2", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":3 },
+      { "id": 5, "type": "diskoteka", "name": "Diskoteka1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5 },
+      { "id": 6, "type": "kafic", "name": "Kafic2", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":4 },
+      { "id": 7, "type": "pivnica", "name": "Pivnica1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":2 },
+      { "id": 8, "type": "pivnica", "name": "Pivnica2", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5 },
+      { "id": 9, "type": "pivnica", "name": "Pivnica3", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5 }
+    ],
+    "Tables": [
+      { "id": 1, "idPlace": 1, "numSeats": 10, "smoking":1 },
+      { "id": 2, "idPlace": 1, "numSeats": 10, "smoking":1 },
+      { "id": 3, "idPlace": 1, "numSeats": 10, "smoking":1 },
+      { "id": 4, "idPlace": 1, "numSeats": 10, "smoking":0 },
+      { "id": 5, "idPlace": 1, "numSeats": 10, "smoking":1 },
+      { "id": 6, "idPlace": 1, "numSeats": 10, "smoking":1 },
+      { "id": 7, "idPlace": 1, "numSeats": 10, "smoking":0 },
+      { "id": 8, "idPlace": 1, "numSeats": 10, "smoking":0 },
+      { "id": 9, "idPlace": 1, "numSeats": 10, "smoking":0 }
+    ],
+    "Reservations": [
+        { "idPlace": 1,"idTable":1,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"},
+        { "idPlace": 1,"idTable":2,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"},
+        { "idPlace": 1,"idTable":3,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"},
+        { "idPlace": 1,"idTable":4,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"},
+        { "idPlace": 1,"idTable":5,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"}
+    ]
+}

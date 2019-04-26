@@ -20,4 +20,10 @@ export class ReservationService{
                 }),5))
             })
     }
+
+    getReservationById(id) {
+        return from(fetch("http://localhost:3000/reservations/" + id)
+            .then(resolve=>{return resolve.json()})
+        );
+    }
 }
