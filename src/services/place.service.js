@@ -1,7 +1,7 @@
-import {from} from "rxjs";
+import {from, Observable} from "rxjs";
 
 export class PlaceService {
-    constructor()
+    constructor(){}
 
     getPlaces() {
         return from(fetch("http://localhost:3000/places")

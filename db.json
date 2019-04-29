@@ -1,4 +1,11 @@
 {
+    "Types": [
+      {"id":1, "name": "Restoran", "img":"src/resources/restoran.jpg", "desc":"Pronadjite najbolje restorane u nasem gradu."},
+      {"id":2, "name": "Kafana", "img":"src/resources/kafana.jpg", "desc":"Pronadjite specijalitete grada na jednom mestu."},
+      {"id":3, "name": "Kafic", "img":"src/resources/kafic.jpg", "desc":"Rezervisite svoje mesto na vreme."},
+      {"id":4, "name": "Diskoteke", "img":"src/resources/diskoteka1.jpg", "desc":"Najbolji nocni provod je na klik od vas."},
+      {"id":5, "name": "Pivnice", "img":"src/resources/pivnica.jpg", "desc":"Popijte najbolja kraft piva u nasem gradu."}
+    ],
     "Places": [
       { "id": 1, "type": "kafana", "name": "Kafana1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":4 },
       { "id": 2, "type": "kafic", "name": "Kafic1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5 },
