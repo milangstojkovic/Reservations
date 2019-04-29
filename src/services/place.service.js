@@ -15,4 +15,10 @@ export class PlaceService {
                 .then(res => { return res.json() })
         )
     }
+
+    getPlaceById(id) {
+        return from(fetch("http://localhost:3000/places/" + id)
+            .then(resolve=>{return resolve.json()})
+        );
+    }
 }
