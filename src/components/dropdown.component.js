@@ -7,6 +7,6 @@ export class DropDownComponent {
 
     draw(element) {
         this._content.innerHTML+=`   
-        <button class="dropdown-item" href="#" id="dugme" value="${element.ime}">${element.ime}</button>`
+        <button class="dropdown-item" href="#" id="dugme" value="${element.name}">${element.name}</button>`;
     }
 }

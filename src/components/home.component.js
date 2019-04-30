@@ -10,8 +10,8 @@ export class HomeComponent {
     draw() {
        // let footerComponent=new FooterComponent();
         //footerComponent.draw();
-        //let navComponent=new NavComponent();
-        //navComponent.draw();
+        let navComponent=new NavComponent();
+        navComponent.draw();
         let mainComponent=new MainHomeComponent();
         mainComponent.draw();
     }

@@ -37,8 +37,7 @@ export class NavComponent {
         </div>
       </nav>`;
         const div=document.getElementById("dropdown-menu");
-        const types=this._typeService.getTypes().pipe(flatMap(type=>type)).subscribe(type=>type);
-        types.forEach(element => new DropDownComponent(div).draw(element));
+        this._typeService.getTypes().subscribe(types=>types.forEach(type=>new DropDownComponent(div).draw(type)));
     }
 
 
