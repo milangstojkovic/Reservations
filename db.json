@@ -7,15 +7,15 @@
       {"id":5, "name": "Pivnice", "img":"src/resources/pivnica.jpg", "desc":"Popijte najbolja kraft piva u nasem gradu."}
     ],
     "Places": [
-      { "id": 1, "type": 2, "name": "Kafana1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg" },
-      { "id": 2, "type": 3, "name": "Kafic1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
-      { "id": 3, "type": 1, "name": "Restoran1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg" },
-      { "id": 4, "type": 2, "name": "Kafana2", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":3, "img":"src/resources/pivnica.jpg" },
-      { "id": 5, "type": 4, "name": "Diskoteka1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
-      { "id": 6, "type": 3, "name": "Kafic2", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg"},
-      { "id": 7, "type": 5, "name": "Pivnica1", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":2, "img":"src/resources/pivnica.jpg" },
-      { "id": 8, "type": 5, "name": "Pivnica2", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
-      { "id": 9, "type": 5, "name": "Pivnica3", "adress": "ahsdj", "music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" }
+      { "id": 1, "type": 2, "name": "Kafana1", "adress": "ahsdj","numOfTablesInRow":3, "music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg" },
+      { "id": 2, "type": 3, "name": "Kafic1", "adress": "ahsdj","numOfTablesInRow":3, "music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
+      { "id": 3, "type": 1, "name": "Restoran1", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg" },
+      { "id": 4, "type": 2, "name": "Kafana2", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":3, "img":"src/resources/pivnica.jpg" },
+      { "id": 5, "type": 4, "name": "Diskoteka1", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
+      { "id": 6, "type": 3, "name": "Kafic2", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg"},
+      { "id": 7, "type": 5, "name": "Pivnica1", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":2, "img":"src/resources/pivnica.jpg" },
+      { "id": 8, "type": 5, "name": "Pivnica2", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
+      { "id": 9, "type": 5, "name": "Pivnica3", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" }
     ],
     "Tables": [
       { "id": 1, "idPlace": 1, "numSeats": 10, "smoking":1 },

@@ -1,7 +1,7 @@
 import {from} from "rxjs";
 
 export class TableService {
-    constructor()
+    constructor() {}
 
     getTables() {
         return from(fetch("http://localhost:3000/tables")

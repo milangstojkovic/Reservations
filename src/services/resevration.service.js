@@ -1,7 +1,7 @@
 import {from} from "rxjs";
 
 export class ReservationService{
-    constructor()
+    constructor() {}
 
     getReservations() {
         return from(fetch("http://localhost:3000/reservations")
