@@ -1,14 +1,17 @@
 import {PlaceService} from "../services/place.service";
 import {TableService} from "../services/table.service";
 import {TableComponent} from "./table.component";
-
 export class PlaceComponent {
     constructor(id) {
-        new PlaceService().getPlaceById(id).subscribe(place=>this.draw(place));
+        new PlaceService().getPlaces().subscribe(places=>places
+            .filter(place=>place.id==id)
+            .map(place=>this.draw(place)));
         this._content=document.getElementById("content");
     }
 
     draw(place) {
+        if(!place)
+        return;
         const row=document.createElement("div");
         row.className="row";
         this._content.appendChild(row);
@@ -16,11 +19,11 @@ export class PlaceComponent {
         divPlace.id="divPlace";
         divPlace.className="col-6";
         row.appendChild(divPlace);
-        divPlace.innerHTML=`<img src=${place.img} align="left" id="divPlace"><h2>${place.name}</h2>
-                            <p>${place.description}</p>
-                            <p>U ovom lokalu mozete cuti live izvodjenje: ${place.music}</p>
-                            <p>Ocena ovog lokala je: ${place.rating}</p>
-                            <p>Adresa lokala: ${place.adress}`;
+            divPlace.innerHTML=`<img src=${place.img} align="left" id="divPlace"><h2>${place.name}</h2>
+            <p>${place.description}</p>
+            <p>U ovom lokalu mozete cuti live izvodjenje: ${place.music}</p>
+            <p>Ocena ovog lokala je: ${place.rating}</p>
+            <p>Adresa lokala: ${place.adress}`;
         const divTables=document.createElement("div");
         divTables.className="col-6";
         divTables.id="divTables";
