@@ -10,9 +10,21 @@ export class ResCheckComponent {
 
     draw() {
         this._content.innerHTML=`<input id="resId"></input>
-                                <p> Unesite broj vase rezervacije </p>
-                                <button id="searchRes" type="button" class="btn btn-outline-success">Pretrazi</button>`;
-        fromEvent(button,'click')
-        (this._reservations.getReservations().filter(reservation=>reservation.id))
+                                <p> Unesite broj vase rezervacije </p>`;
+        const searchBtn=document.createElement("button");
+        searchBtn.className="btn btn-outline-success";
+        searchBtn.innerHTML="Pretrazi";
+        this._content.appendChild(searchBtn);
+        searchBtn.onclick=(ev)=>this.drawRes();
+    }
+
+
+    drawRes() {
+        let numofTable=document.getElementById("resId").value;
+        if(isNaN(numofTable)){
+            alert("Unesite broj!")
+            return;
+        }
+        
     }
 }

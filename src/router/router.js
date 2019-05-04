@@ -5,9 +5,18 @@ export class Router {
 
     navigate(val) {
         switch (val) {
-            case 0: navigateHome();
-            case 1: navigatePlaces();
-            case 2: navigateReservationCheck();
+            case 0:{
+                navigateHome();
+                break;
+            }
+            case 1:{
+                navigatePlaces(type);
+                break;
+            }
+            case 2:{
+                navigateReservationCheck();
+                break;
+            }
         }
     }
 
@@ -16,9 +25,8 @@ export class Router {
         homeComponent.draw();
     }
 
-    navigatePlaces() {
+    navigatePlaces(type) {
         let placeComponent=new placeComponent();
-        placeComponent.draw();
     }
 
     navigateReservationCheck() {

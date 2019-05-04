@@ -36,6 +36,13 @@ export class PlaceComponent {
             row.height="200";
             divTables.appendChild(rowTable);
         }
+        drawTables(place);
+        const rowRes=document.createElement("div");
+        rowRes.id="res-body";
+        this._content.appendChild(rowRes);
+    }
+
+    drawTables(place) {
         new TableService().getTables().subscribe(tables=>tables
             .filter(table=>table.idPlace===place.id)
             .map(table=>new TableComponent(table,place.numOfTablesInRow)));
