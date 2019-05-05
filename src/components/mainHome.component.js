@@ -1,10 +1,11 @@
 import {TypeService} from "../services/type.service";
-import {flatMap} from"rxjs/operators";
+import { Router } from "../router/router";
 
 export class MainHomeComponent {
     constructor() {
         this._content=document.getElementById("content");
         this._typeService=new TypeService();
+        this._router=new Router();
     }
 
     draw() {
@@ -21,7 +22,8 @@ export class MainHomeComponent {
         typeDiv.innerHTML=`<img src=${type.img} width='140' height='140' class='rounded-circle'>
         <h2>${type.name}</h2>
         <p>${type.desc}</p>
-        <p><button class='btn btn-secondary' role='button' id='dugme' value=${type.name}>Rezervisi »</button></p>`;
+        <p><button class='btn btn-secondary' role='button' id='${type.id}' value=${type.name}>Rezervisi »</button></p>`;
     div.appendChild(typeDiv);
+        document.getElementById(type.id).onclick=(ev)=>this._router.navigate(1,type.id);
     }
 }

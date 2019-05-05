@@ -1,4 +1,4 @@
-import {ReservationService} from "../services/resevration.service";
+import {ReservationService} from "../services/reservation.service";
 import {PlaceService} from "../services/place.service";
 import {fromEvent} from "rxjs";
 

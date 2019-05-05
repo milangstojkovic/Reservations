@@ -10,9 +10,8 @@ export class PlaceService {
     }
 
     getPlaceBySearch(text) {
-        return from(
-            fetch("http://localhost:3000/places?q=" + text)
-                .then(res => { return res.json() })
+        return from(fetch("http://localhost:3000/places?q=" + text)
+            .then(res => { return res.json() })
         )
     }
 

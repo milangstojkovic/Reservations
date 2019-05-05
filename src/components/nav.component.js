@@ -1,11 +1,12 @@
 import {DropDownComponent} from "./dropdown.component";
 import { TypeService } from "../services/type.service";
-import {flatMap} from "rxjs/operators"
+import {router, Router} from "../router/router"
 
 export class NavComponent {
     constructor() {
         this._content=document.getElementById("nav");
         this._typeService=new TypeService();
+        this._router=new Router();
     }
 
     draw(){
@@ -38,6 +39,8 @@ export class NavComponent {
       </nav>`;
         const div=document.getElementById("dropdown-menu");
         this._typeService.getTypes().subscribe(types=>types.forEach(type=>new DropDownComponent(div).draw(type)));
+        document.getElementById("checkRes").onclick=ev=>{this._router.navigate(2)};
+        document.querySelectorAll("#showHome").forEach(element=>element.onclick=ev=>{this._router.navigate(0)});
     }
 
 

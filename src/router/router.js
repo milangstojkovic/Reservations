@@ -1,20 +1,28 @@
-
+import {HomeComponent} from "../components/home.component";
+import {AlbumComponent} from "../components/album.component";
+import {ResCheckComponent} from "../components/resCheck.component";
+import { PlaceComponent } from "../components/place.component";
 
 export class Router {
     constructor(){}
 
-    navigate(val) {
+    navigate(val,id) {
+        document.getElementById("content").innerHTML="";
         switch (val) {
             case 0:{
-                navigateHome();
+                this.navigateHome();
                 break;
             }
             case 1:{
-                navigatePlaces(type);
+                this.navigateAlbum(id);
                 break;
             }
             case 2:{
-                navigateReservationCheck();
+                this.navigateReservationCheck();
+                break;
+            }
+            case 3:{
+                this.navigatePlace(id);
                 break;
             }
         }
@@ -25,12 +33,16 @@ export class Router {
         homeComponent.draw();
     }
 
-    navigatePlaces(type) {
-        let placeComponent=new placeComponent();
+    navigateAlbum(type) {
+        let albumComponent=new AlbumComponent(type).draw();
     }
 
     navigateReservationCheck() {
-        let reservationComponent= new ReservationComponent();
+        let reservationComponent= new ResCheckComponent();
         reservationComponent.draw();
+    }
+    
+    navigatePlace(id) {
+        let placeComponent=new PlaceComponent(id);
     }
 }

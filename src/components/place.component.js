@@ -19,7 +19,7 @@ export class PlaceComponent {
         divPlace.id="divPlace";
         divPlace.className="col-6";
         row.appendChild(divPlace);
-            divPlace.innerHTML=`<img src=${place.img} align="left" id="divPlace"><h2>${place.name}</h2>
+            divPlace.innerHTML=`<img src=${place.img} align="left" id="imgPlace"><h2>${place.name}</h2>
             <p>${place.description}</p>
             <p>U ovom lokalu mozete cuti live izvodjenje: ${place.music}</p>
             <p>Ocena ovog lokala je: ${place.rating}</p>
@@ -36,7 +36,7 @@ export class PlaceComponent {
             row.height="200";
             divTables.appendChild(rowTable);
         }
-        drawTables(place);
+        this.drawTables(place);
         const rowRes=document.createElement("div");
         rowRes.id="res-body";
         this._content.appendChild(rowRes);

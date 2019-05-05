@@ -7,7 +7,7 @@
       {"id":5, "name": "Pivnice", "img":"src/resources/pivnica.jpg", "desc":"Popijte najbolja kraft piva u nasem gradu."}
     ],
     "Places": [
-      { "id": 1, "type": 2, "name": "Kafana1", "adress": "ahsdj","numOfTablesInRow":3, "music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg" },
+      { "id": 1, "type": 2, "name": "Kafana1", "adress": "ahsdj","numOfTablesInRow":3, "music":"asfasf","description":"Prava etno kafana sa originalnim domaćim jelima. Smeštena je u neposrednoj blizini gradske opštine. Enterijer je spoj modernog i tradicionalnog stila, dopadljiv i prijatan, u istoj meri kao i osoblje kafane.","rating":4, "img":"src/resources/pivnica.jpg" },
       { "id": 2, "type": 3, "name": "Kafic1", "adress": "ahsdj","numOfTablesInRow":3, "music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
       { "id": 3, "type": 1, "name": "Restoran1", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg" },
       { "id": 4, "type": 2, "name": "Kafana2", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":3, "img":"src/resources/pivnica.jpg" },
@@ -29,10 +29,6 @@
       { "id": 9, "idPlace": 1, "numSeats": 10, "smoking":0 }
     ],
     "Reservations": [
-        { "idPlace": 1,"idTable":1,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"},
-        { "idPlace": 1,"idTable":2,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"},
-        { "idPlace": 1,"idTable":3,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"},
-        { "idPlace": 1,"idTable":4,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"},
-        { "idPlace": 1,"idTable":5,"name":"Milan","startDate":"2019-04-30T20:00:00.000Z", "endDate":"2019-04-30T23:00:00.000Z"}
+      { "idTable":"1", "idPlace":"1", "name":"Nenad","date":"05/05/2019","startTime":"20:00","endTime":"22:00"}
     ]
 }

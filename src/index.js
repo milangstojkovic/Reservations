@@ -1,13 +1,6 @@
-import {PlaceService} from "./services/place.service";
-import {flatMap} from"rxjs/operators";
-import {HomeComponent} from "./components/home.component";
-import {AlbumComponent} from "./components/album.component";
-import {PlaceComponent} from "./components/place.component";
-import {ResCheckComponent} from "./components/resCheck.component";
-import { NavComponent } from "./components/nav.component";
+import { Router } from "./router/router";
 
 
-let nav=new NavComponent();
-nav.draw();
-let home=new ResCheckComponent();
-home.draw();
+
+const router=new Router();
+router.navigate(0);
