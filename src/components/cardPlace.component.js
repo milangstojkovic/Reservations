@@ -15,7 +15,6 @@ export class CardPlaceComponent {
                             <img src="${this._place.img}" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">${this._place.name}</h5>
-                            <p class="card-text">${this._place.description}</p>
                             <button id="${this._place.id}" class="btn btn-sm btn-outline-secondary">Rezervisi>></button>
                             </div>
                             </div>`;

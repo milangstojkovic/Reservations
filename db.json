@@ -1,34 +1,247 @@
 {
-    "Types": [
-      {"id":1, "name": "Restoran", "img":"src/resources/restoran.jpg", "desc":"Pronadjite najbolje restorane u nasem gradu."},
-      {"id":2, "name": "Kafana", "img":"src/resources/kafana.jpg", "desc":"Pronadjite specijalitete grada na jednom mestu."},
-      {"id":3, "name": "Kafic", "img":"src/resources/kafic.jpg", "desc":"Rezervisite svoje mesto na vreme."},
-      {"id":4, "name": "Diskoteke", "img":"src/resources/diskoteka1.jpg", "desc":"Najbolji nocni provod je na klik od vas."},
-      {"id":5, "name": "Pivnice", "img":"src/resources/pivnica.jpg", "desc":"Popijte najbolja kraft piva u nasem gradu."}
-    ],
-    "Places": [
-      { "id": 1, "type": 2, "name": "Kafana1", "adress": "ahsdj","numOfTablesInRow":3, "music":"asfasf","description":"Prava etno kafana sa originalnim domaćim jelima. Smeštena je u neposrednoj blizini gradske opštine. Enterijer je spoj modernog i tradicionalnog stila, dopadljiv i prijatan, u istoj meri kao i osoblje kafane.","rating":4, "img":"src/resources/pivnica.jpg" },
-      { "id": 2, "type": 3, "name": "Kafic1", "adress": "ahsdj","numOfTablesInRow":3, "music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
-      { "id": 3, "type": 1, "name": "Restoran1", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg" },
-      { "id": 4, "type": 2, "name": "Kafana2", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":3, "img":"src/resources/pivnica.jpg" },
-      { "id": 5, "type": 4, "name": "Diskoteka1", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
-      { "id": 6, "type": 3, "name": "Kafic2", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":4, "img":"src/resources/pivnica.jpg"},
-      { "id": 7, "type": 5, "name": "Pivnica1", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":2, "img":"src/resources/pivnica.jpg" },
-      { "id": 8, "type": 5, "name": "Pivnica2", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" },
-      { "id": 9, "type": 5, "name": "Pivnica3", "adress": "ahsdj", "numOfTablesInRow":3,"music":"asfasf","description":"asfs","rating":5, "img":"src/resources/pivnica.jpg" }
-    ],
-    "Tables": [
-      { "id": 1, "idPlace": 1, "numSeats": 10, "smoking":1 },
-      { "id": 2, "idPlace": 1, "numSeats": 10, "smoking":1 },
-      { "id": 3, "idPlace": 1, "numSeats": 10, "smoking":1 },
-      { "id": 4, "idPlace": 1, "numSeats": 10, "smoking":0 },
-      { "id": 5, "idPlace": 1, "numSeats": 10, "smoking":1 },
-      { "id": 6, "idPlace": 1, "numSeats": 10, "smoking":1 },
-      { "id": 7, "idPlace": 1, "numSeats": 10, "smoking":0 },
-      { "id": 8, "idPlace": 1, "numSeats": 10, "smoking":0 },
-      { "id": 9, "idPlace": 1, "numSeats": 10, "smoking":0 }
-    ],
-    "Reservations": [
-      { "idTable":"1", "idPlace":"1", "name":"Nenad","date":"05/05/2019","startTime":"20:00","endTime":"22:00"}
-    ]
+  "Types": [
+    {
+      "id": 1,
+      "name": "Restoran",
+      "img": "src/resources/restoran.jpg",
+      "desc": "Pronadjite najbolje restorane u nasem gradu."
+    },
+    {
+      "id": 2,
+      "name": "Kafana",
+      "img": "src/resources/kafana.jpg",
+      "desc": "Pronadjite specijalitete grada na jednom mestu."
+    },
+    {
+      "id": 3,
+      "name": "Kafic",
+      "img": "src/resources/kafic.jpg",
+      "desc": "Rezervisite svoje mesto na vreme."
+    },
+    {
+      "id": 4,
+      "name": "Diskoteke",
+      "img": "src/resources/diskoteka1.jpg",
+      "desc": "Najbolji nocni provod je na klik od vas."
+    },
+    {
+      "id": 5,
+      "name": "Pivnice",
+      "img": "src/resources/pivnica.jpg",
+      "desc": "Popijte najbolja kraft piva u nasem gradu."
+    }
+  ],
+  "Places": [
+    {
+      "id": 1,
+      "type": 2,
+      "name": "Mezze",
+      "adress": "Vojvodjanska 34",
+      "numOfTablesInRow": 3,
+      "music": "Bend kafane Mezze",
+      "description": "Prava etno kafana sa originalnim domaćim jelima. Smeštena je u neposrednoj blizini gradske opštine. Enterijer je spoj modernog i tradicionalnog stila, dopadljiv i prijatan, u istoj meri kao i osoblje kafane.",
+      "rating": 4,
+      "img": "src/resources/kafana1.jpg"
+    },
+    {
+      "id": 2,
+      "type": 3,
+      "name": "Vespa",
+      "adress": "Trg Republike 1",
+      "numOfTablesInRow": 3,
+      "music": "/",
+      "description": "Koliko ste puta okrenuli glavu kada pored vas prozuji skuter na kome lebde generacije? Jeste li znali da u Nišu upravo na Trgu Republike stoji Vukov spomenik. A njegov pogled u jezgru modernog boemskog kvarta usmeren je prema baru iz kog se gradski duh širi u koncetričnim krugovima. Baš tu, u epicentru trusnog kulturnog područja vraća se Nišu gradski šmek ogrnut mods kaputom. Na ovom mestu smešten je VESPA BAR, vremeplov koji seže u 1946. godinu, iz koje na put ka večnosti kreće urbani stil života, čiji neuhvatljivi talas nalazi predah upravo u Nišu.",
+      "rating": 5,
+      "img": "src/resources/vespa.jpg"
+    },
+    {
+      "id": 3,
+      "type": 4,
+      "name": "Freestyler",
+      "adress": "ahsdj",
+      "numOfTablesInRow": 3,
+      "music": "Hip Hop",
+      "description": "Najpopularniji letnji splav u Beogradu je dobio svoju zimsku varijantu, splav Freestyler se u toku zimske sezone seli u klub Freestyler Winter Stage. Klub Freestyler se nalazi u okviru Beton hale, centra noćnih dešavanja u Beogradu. Ako ste navikli na vrhunski zvuk, spektakularnu rasvetu i najbolji provod na splavu Freestyler, ne očekujte ništa manje ni od kluba Freestyler Winter Stage. Iskusan tim ugostitelja sa višedecenijskim iskustvom u beogradskom clubbingu obećava da će se energija sa letnjeg splava preneti i u zimski klub i da će Freestyler Winter Stage brzo steći popularnost koju već godinama sa uspehom nosi splav Freestyler.",
+      "rating": 4,
+      "img": "src/resources/freestyler.jpg"
+    },
+    {
+      "id": 4,
+      "type": 2,
+      "name": "Sevdah",
+      "adress": "Sremskih odreda 1",
+      "numOfTablesInRow": 3,
+      "music": "SevdahBABY",
+      "description": "Kafana Sevdah nalazi se u Sremskih Odreda 1, ovo predivno boemsko mesto koje će istinski obradovati sve ljubitelje kafanskog života svojim sjajnim i neprevaziđenim starogradskim repertoarom može razveseliti 150 ljudi. Kafana Sevdah je kako joj i samo ime kaže mesto koje je sačinjeno od čiste duše i od sevdajha koji su sakupljeni od svih velikh boemskih majstora i preneti baš u ovu kafanu da potonje beomske generacije mogu da uživaju u kafani kakva je nekada bila i kakve se sa setom svi prisećamo. Enterijer kafane Sevdah je božanstven, od svetla preko ukrašenih zidova do šanka u kombinaciji cigle i dvreta sve je osmišljeno za istinsko bomesko, meračko i naravno sevdačko uživanje. Kafana Sevdah ima sve parametre koji su neophodni za uživanje i dobar kafanski provod. Ovde ćete se susresti sa svim onim kafanskim pesmama bez kojih veselje i kafana ne bi opstali ovako dugo.",
+      "rating": 3,
+      "img": "src/resources/sevdah.jpg"
+    },
+    {
+      "id": 5,
+      "type": 1,
+      "name": "Romansa",
+      "adress": "Matejevacki put 108",
+      "numOfTablesInRow": 3,
+      "music": "Vas izbor.",
+      "description": "Želimo Vam dobrodošlicu u Vaš i naš restoran Romansa. Romansa je restoran nacionalne kuhinje sa izvanrednim kombinacijama različitih ukusa. Autentičan enterijer i vrhunska usluga će Vam već na prvom koraku dočarati Romansu, zato neka Vaši prvi koraci započnu baš ovde.",
+      "rating": 5,
+      "img": "src/resources/romansa.jpg"
+    },
+    {
+      "id": 6,
+      "type": 3,
+      "name": "Lagano",
+      "adress": "Milesevska 44",
+      "numOfTablesInRow": 3,
+      "music": "/",
+      "description": "Restoran Lagano nalazi se na Vračaru u ulici Mileševska 44. Kao što Vračar čuva onaj urbani, tipičan beogradski duh, tako i restoran Lagano čuva ono ukusno, tipično nacionalno iskustvo obroka koji je uživanje za sva čula. Najkvalitetnije, jednostavne i naravno, ukusne namirnice, pažljivo pripremljene i lepo servirane, uz sjajna pića i vina, srdačnu atmosferu, nenametljiv enterijer, čine da restoran Lagano bude pravi izbor za ugodan ručak ili večeru, a naravno i za doručak. Od kada je otvoren restoran Lagano, gosti su sigurni da će ovde biti dočekani sa osmehom i savršenim obrokom.",
+      "rating": 4,
+      "img": "src/resources/lagano.jpg"
+    },
+    {
+      "id": 7,
+      "type": 5,
+      "name": "Beer Garden",
+      "adress": "Dusanova 43",
+      "numOfTablesInRow": 3,
+      "music": "Ex-Yu",
+      "description": "Beer Garden je pivnica nastala na mestu nekadašnjeg legendarnog Beer House-a. Uz veoma prijatnu baštu i veliki broj drvenih stolova i klupa u lokalu predstavlja najveću pivnicu u Nišu. Nažalost, s obzirom da ima potpisan ekskluzivni ugovor sa Apatinskom pivarom, ne može se pohvaliti velikim izborom piva - na raspolaganju vam je svega pet - šest brendova. Od hrane možete naručiti pomfrit, girice, pileća krilca ili „dasku” - miks narezanih suhomesnatih proizvoda.",
+      "rating": 4,
+      "img": "src/resources/beergarden.jpg"
+    },
+    {
+      "id": 8,
+      "type": 5,
+      "name": "Beer Book",
+      "adress": "Dusanova 98",
+      "numOfTablesInRow": 3,
+      "music": "Rok",
+      "description": "Beer Book je najnovija pivnica u gradu, otvorena avgusta 2015. godine. U moderno dizajniranom ambijentu ove pivnice možete probati preko 30 vrsta piva. Nažalost, hrana (još uvek) nije u ponudi tako da ćete svoju glad morati da utolite na nekom drugom mestu. Vikendom se u pivnici organizuju svirke niških bendova tako da posetioci mogu uživati u domaćoj i stranoj rok muzici.",
+      "rating": 2,
+      "img": "src/resources/beerbook.jpg"
+    },
+    {
+      "id": 9,
+      "type": 5,
+      "name": "Nemir",
+      "adress": "Ucitelj Tasina 17",
+      "numOfTablesInRow": 3,
+      "music": "Hard Rock",
+      "description": "Kako navode na svom sajtu, u ovoj pivnici možete probati više od 80 različitih piva pri čemu se ponuda neprestano povećava. Pored širokog izbora pića, postoji i kuhinja iz koje možete naručiti pomfrit, ćevape, kobasice i slične stvari sa roštilja koje, pored toga što su ukusne, fenomenalno idu uz pivo. Veoma pohvalna je i činjenica to što se hrana naplaćuje po gramaži tako da, zavisno od apetita, sami možete odrediti svoju porciju.",
+      "rating": 5,
+      "img": "src/resources/nemir.jpg"
+    }
+  ],
+  "Tables": [
+    {
+      "id": 1,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 0
+    }
+  ],
+  "Reservations": [
+    {
+      "idPlace": 1,
+      "idTable": 1,
+      "name": "",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "id": 1
+    },
+    {
+      "idPlace": 1,
+      "idTable": 1,
+      "name": "",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "id": 2
+    },
+    {
+      "idPlace": 1,
+      "idTable": 1,
+      "name": "",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "id": 3
+    },
+    {
+      "idPlace": 1,
+      "idTable": 1,
+      "name": "Milan",
+      "date": "2019-05-21",
+      "startTime": "13:00",
+      "endTime": "15:00",
+      "id": 4
+    },
+    {
+      "idPlace": 1,
+      "idTable": 2,
+      "name": "sad",
+      "date": "2019-05-08",
+      "startTime": "16:00",
+      "endTime": "18:00",
+      "id": 5
+    },
+    {
+      "idPlace": 1,
+      "idTable": 1,
+      "name": "\\sd",
+      "date": "2019-05-21",
+      "startTime": "13:00",
+      "endTime": "16:00",
+      "id": 6
+    }
+  ]
 }

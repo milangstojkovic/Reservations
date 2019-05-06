@@ -12,7 +12,7 @@ export class ReservationService{
     writeReservation(reservation) {
             return new Promise((res, rej) => {
                 setTimeout(() => res(fetch("http://localhost:3000/reservations", {
-                    method: 'PUT',
+                    method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },

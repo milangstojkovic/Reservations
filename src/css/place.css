@@ -11,5 +11,15 @@
 }
 
 #imgPlace {
+    height:300px;
+    width:300px;
     padding-right: 10px;
+}
+
+.card {
+    height:300px;
+}
+
+.card-img-top {
+    height:200px;
 }

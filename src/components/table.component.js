@@ -1,4 +1,3 @@
-import { fromEvent } from "rxjs";
 import {ReservationService} from "../services/reservation.service"
 
 export class TableComponent {
@@ -7,6 +6,7 @@ export class TableComponent {
         let str="row"+table.id%num;
         this._container=document.getElementById(str);
         this.draw();
+        this._reservationService=new ReservationService();
     }
 
     draw() {
@@ -37,15 +37,39 @@ export class TableComponent {
         modalBody.appendChild(tableContent);
         document.getElementById("resTable").onclick=(ev)=>this.resTable();
     }
+
     resTable() {
+        let resName=document.getElementById("resName").value;
+        let resDate=document.getElementById("resDate").value;
+        let startTime=document.getElementById("startTime").value;
+        let endTime=document.getElementById("endTime").value;
+        if(!resName || !resDate || !startTime || !endTime || endTime<startTime) {
+            alert("Unesite sve podatke i proverite da li su ispravni!").
+            return;
+        }
+        this.checkRes(resDate,startTime,endTime)
+
         let reservation=new Object();;
         reservation.idPlace=this._table.idPlace;
         reservation.idTable=this._table.id;
-        reservation.name=document.getElementById("resName").value;
-        reservation.date=document.getElementById("resDate").value;
-        reservation.startTime=document.getElementById("startTime").value;
-        reservation.endTime=document.getElementById("endTime").value;
-        let ResService=new ReservationService();
-        ResService.writeReservation(reservation);
+        reservation.name=resName;
+        reservation.date=resDate;
+        reservation.startTime=startTime;
+        reservation.endTime=endTime;
+        this._reservationService.writeReservation(reservation);
+    }
+
+    checkRes(date,startTime,endTime) {
+        this._reservationService.getReservations().subscribe(reservations=>reservations
+            .filter(res=>(res.idPlace==this._table.idPlace) && (res.idTable==this._table.id) && (res.date==date))
+            .forEach(res=>this.checkTime(res,startTime,endTime)));
+    }
+
+    checkTime(res,startTime,endTime) {
+        if((startTime>=res.startTime && startTime<=res.endTime)||
+            (endTime>=res.startTime && endTime<=res.endTime)||
+            (startTime<=res.startTime && endTime>=res.endTime)) {
+                alert("Sto koji pokusavate da rezervisete zauzet je od "+res.startTime+" do "+res.endTime+" tog dana.");
+        }
     }
 }
