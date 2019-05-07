@@ -47,22 +47,23 @@ export class TableComponent {
             alert("Unesite sve podatke i proverite da li su ispravni!").
             return;
         }
-        this.checkRes(resDate,startTime,endTime)
-
-        let reservation=new Object();;
-        reservation.idPlace=this._table.idPlace;
-        reservation.idTable=this._table.id;
-        reservation.name=resName;
-        reservation.date=resDate;
-        reservation.startTime=startTime;
-        reservation.endTime=endTime;
-        this._reservationService.writeReservation(reservation);
+        if(this.checkRes(resDate,startTime,endTime)) {
+            let reservation=new Object();;
+            reservation.idPlace=this._table.idPlace;
+            reservation.idTable=this._table.id;
+            reservation.name=resName;
+            reservation.date=resDate;
+            reservation.startTime=startTime;
+            reservation.endTime=endTime;
+            this._reservationService.writeReservation(reservation);
+        }
     }
 
     checkRes(date,startTime,endTime) {
         this._reservationService.getReservations().subscribe(reservations=>reservations
             .filter(res=>(res.idPlace==this._table.idPlace) && (res.idTable==this._table.id) && (res.date==date))
-            .forEach(res=>this.checkTime(res,startTime,endTime)));
+            .forEach(res=>{if(!this.checkTime(res,startTime,endTime))
+                            return false}));
     }
 
     checkTime(res,startTime,endTime) {
@@ -70,6 +71,8 @@ export class TableComponent {
             (endTime>=res.startTime && endTime<=res.endTime)||
             (startTime<=res.startTime && endTime>=res.endTime)) {
                 alert("Sto koji pokusavate da rezervisete zauzet je od "+res.startTime+" do "+res.endTime+" tog dana.");
+                return false;
         }
+        return true;
     }
 }
