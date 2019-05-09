@@ -34,7 +34,7 @@ export class TableComponent {
                                 <tr><td>Unesite ime:</td><td><input id="resName" required></td></tr>
                                 <tr><td>Izaberite datum</td><td><input id="resDate" type="date" min=${today}></td></tr>
                                 <tr><td>Izaberite vreme</td><td>OD: <input id="startTime" type="time" step="3600" min="12:00" max="23:59" required></td></tr>
-                                <tr><td></td><td>DO: <input id="endTime" type="time" step="3600" min="12:00" max="23:59" required></td></tr>
+                                <tr><td></td><td>DO: <input id="endTime" type="time" step="3600" min="12:59" max="23:59" required></td></tr>
                                 <tr><td></td><td><button id="resTable" type="button" class="btn btn-outline-success">Rezervisi</button></td></tr>`;
         modalBody.appendChild(tableContent);
         document.getElementById("resTable").onclick=(ev)=>this.resTable();
@@ -46,7 +46,7 @@ export class TableComponent {
         let startTime=document.getElementById("startTime").value;
         let endTime=document.getElementById("endTime").value;
         if(!resName || !resDate || !startTime || !endTime || endTime<startTime) {
-            alert("Unesite sve podatke i proverite da li su ispravni!").
+            alert("Unesite sve podatke i proverite da li su ispravni!");
             return;
         }
         if(this.checkRes(resDate,startTime,endTime)) {

@@ -37,7 +37,7 @@
       "type": 2,
       "name": "Mezze",
       "adress": "Vojvodjanska 34",
-      "numOfTablesInRow": 3,
+      "numOfTablesInRow": 4,
       "music": "Bend kafane Mezze",
       "description": "Prava etno kafana sa originalnim domaćim jelima. Smeštena je u neposrednoj blizini gradske opštine. Enterijer je spoj modernog i tradicionalnog stila, dopadljiv i prijatan, u istoj meri kao i osoblje kafane.",
       "rating": 4,
@@ -59,7 +59,7 @@
       "type": 4,
       "name": "Freestyler",
       "adress": "ahsdj",
-      "numOfTablesInRow": 3,
+      "numOfTablesInRow": 4,
       "music": "Hip Hop",
       "description": "Najpopularniji letnji splav u Beogradu je dobio svoju zimsku varijantu, splav Freestyler se u toku zimske sezone seli u klub Freestyler Winter Stage. Klub Freestyler se nalazi u okviru Beton hale, centra noćnih dešavanja u Beogradu. Ako ste navikli na vrhunski zvuk, spektakularnu rasvetu i najbolji provod na splavu Freestyler, ne očekujte ništa manje ni od kluba Freestyler Winter Stage. Iskusan tim ugostitelja sa višedecenijskim iskustvom u beogradskom clubbingu obećava da će se energija sa letnjeg splava preneti i u zimski klub i da će Freestyler Winter Stage brzo steći popularnost koju već godinama sa uspehom nosi splav Freestyler.",
       "rating": 4,
@@ -70,7 +70,7 @@
       "type": 2,
       "name": "Sevdah",
       "adress": "Sremskih odreda 1",
-      "numOfTablesInRow": 3,
+      "numOfTablesInRow": 4,
       "music": "SevdahBABY",
       "description": "Kafana Sevdah nalazi se u Sremskih Odreda 1, ovo predivno boemsko mesto koje će istinski obradovati sve ljubitelje kafanskog života svojim sjajnim i neprevaziđenim starogradskim repertoarom može razveseliti 150 ljudi. Kafana Sevdah je kako joj i samo ime kaže mesto koje je sačinjeno od čiste duše i od sevdajha koji su sakupljeni od svih velikh boemskih majstora i preneti baš u ovu kafanu da potonje beomske generacije mogu da uživaju u kafani kakva je nekada bila i kakve se sa setom svi prisećamo. Enterijer kafane Sevdah je božanstven, od svetla preko ukrašenih zidova do šanka u kombinaciji cigle i dvreta sve je osmišljeno za istinsko bomesko, meračko i naravno sevdačko uživanje. Kafana Sevdah ima sve parametre koji su neophodni za uživanje i dobar kafanski provod. Ovde ćete se susresti sa svim onim kafanskim pesmama bez kojih veselje i kafana ne bi opstali ovako dugo.",
       "rating": 3,
@@ -92,7 +92,7 @@
       "type": 3,
       "name": "Lagano",
       "adress": "Milesevska 44",
-      "numOfTablesInRow": 3,
+      "numOfTablesInRow": 5,
       "music": "/",
       "description": "Restoran Lagano nalazi se na Vračaru u ulici Mileševska 44. Kao što Vračar čuva onaj urbani, tipičan beogradski duh, tako i restoran Lagano čuva ono ukusno, tipično nacionalno iskustvo obroka koji je uživanje za sva čula. Najkvalitetnije, jednostavne i naravno, ukusne namirnice, pažljivo pripremljene i lepo servirane, uz sjajna pića i vina, srdačnu atmosferu, nenametljiv enterijer, čine da restoran Lagano bude pravi izbor za ugodan ručak ili večeru, a naravno i za doručak. Od kada je otvoren restoran Lagano, gosti su sigurni da će ovde biti dočekani sa osmehom i savršenim obrokom.",
       "rating": 4,
@@ -103,7 +103,7 @@
       "type": 5,
       "name": "Beer Garden",
       "adress": "Dusanova 43",
-      "numOfTablesInRow": 3,
+      "numOfTablesInRow": 2,
       "music": "Ex-Yu",
       "description": "Beer Garden je pivnica nastala na mestu nekadašnjeg legendarnog Beer House-a. Uz veoma prijatnu baštu i veliki broj drvenih stolova i klupa u lokalu predstavlja najveću pivnicu u Nišu. Nažalost, s obzirom da ima potpisan ekskluzivni ugovor sa Apatinskom pivarom, ne može se pohvaliti velikim izborom piva - na raspolaganju vam je svega pet - šest brendova. Od hrane možete naručiti pomfrit, girice, pileća krilca ili „dasku” - miks narezanih suhomesnatih proizvoda.",
       "rating": 4,
@@ -114,7 +114,7 @@
       "type": 5,
       "name": "Beer Book",
       "adress": "Dusanova 98",
-      "numOfTablesInRow": 3,
+      "numOfTablesInRow": 5,
       "music": "Rok",
       "description": "Beer Book je najnovija pivnica u gradu, otvorena avgusta 2015. godine. U moderno dizajniranom ambijentu ove pivnice možete probati preko 30 vrsta piva. Nažalost, hrana (još uvek) nije u ponudi tako da ćete svoju glad morati da utolite na nekom drugom mestu. Vikendom se u pivnici organizuju svirke niških bendova tako da posetioci mogu uživati u domaćoj i stranoj rok muzici.",
       "rating": 2,
@@ -136,31 +136,31 @@
     {
       "id": 1,
       "idPlace": 1,
-      "numSeats": 10,
+      "numSeats": 4,
       "smoking": 1
     },
     {
       "id": 2,
       "idPlace": 1,
-      "numSeats": 10,
+      "numSeats": 6,
       "smoking": 1
     },
     {
       "id": 3,
       "idPlace": 1,
-      "numSeats": 10,
+      "numSeats": 3,
       "smoking": 1
     },
     {
       "id": 4,
       "idPlace": 1,
-      "numSeats": 10,
+      "numSeats": 5,
       "smoking": 0
     },
     {
       "id": 5,
       "idPlace": 1,
-      "numSeats": 10,
+      "numSeats": 7,
       "smoking": 1
     },
     {
@@ -184,6 +184,594 @@
     {
       "id": 9,
       "idPlace": 1,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 10,
+      "idPlace": 1,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 11,
+      "idPlace": 1,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 12,
+      "idPlace": 1,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 13,
+      "idPlace": 1,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 1,
+      "idPlace": 2,
+      "numSeats": 4,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 2,
+      "numSeats": 6,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 2,
+      "numSeats": 3,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 2,
+      "numSeats": 5,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 2,
+      "numSeats": 7,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 2,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 2,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 2,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 2,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 1,
+      "idPlace": 3,
+      "numSeats": 4,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 3,
+      "numSeats": 6,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 3,
+      "numSeats": 3,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 3,
+      "numSeats": 5,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 3,
+      "numSeats": 7,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 3,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 3,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 3,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 3,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 10,
+      "idPlace": 3,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 11,
+      "idPlace": 3,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 12,
+      "idPlace": 3,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 13,
+      "idPlace": 3,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 1,
+      "idPlace": 4,
+      "numSeats": 4,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 4,
+      "numSeats": 6,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 4,
+      "numSeats": 3,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 4,
+      "numSeats": 5,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 4,
+      "numSeats": 7,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 4,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 4,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 4,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 4,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 10,
+      "idPlace": 4,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 11,
+      "idPlace": 4,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 12,
+      "idPlace": 4,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 13,
+      "idPlace": 4,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 14,
+      "idPlace": 4,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 15,
+      "idPlace": 4,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 16,
+      "idPlace": 4,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 1,
+      "idPlace": 5,
+      "numSeats": 4,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 5,
+      "numSeats": 6,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 5,
+      "numSeats": 3,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 5,
+      "numSeats": 5,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 5,
+      "numSeats": 7,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 5,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 5,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 5,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 5,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 10,
+      "idPlace": 5,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 11,
+      "idPlace": 5,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 12,
+      "idPlace": 5,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 13,
+      "idPlace": 5,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 14,
+      "idPlace": 5,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 1,
+      "idPlace": 6,
+      "numSeats": 4,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 6,
+      "numSeats": 6,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 6,
+      "numSeats": 3,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 6,
+      "numSeats": 5,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 6,
+      "numSeats": 7,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 6,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 6,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 6,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 6,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 10,
+      "idPlace": 6,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 11,
+      "idPlace": 6,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 12,
+      "idPlace": 6,
+      "numSeats": 6,
+      "smoking": 0
+    },
+    {
+      "id": 1,
+      "idPlace": 7,
+      "numSeats": 4,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 7,
+      "numSeats": 6,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 7,
+      "numSeats": 3,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 7,
+      "numSeats": 5,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 7,
+      "numSeats": 7,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 7,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 7,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 7,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 7,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 10,
+      "idPlace": 7,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 1,
+      "idPlace": 8,
+      "numSeats": 4,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 8,
+      "numSeats": 6,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 8,
+      "numSeats": 3,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 8,
+      "numSeats": 5,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 8,
+      "numSeats": 7,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 8,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 8,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 8,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 8,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 10,
+      "idPlace": 8,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 1,
+      "idPlace": 9,
+      "numSeats": 4,
+      "smoking": 1
+    },
+    {
+      "id": 2,
+      "idPlace": 9,
+      "numSeats": 6,
+      "smoking": 1
+    },
+    {
+      "id": 3,
+      "idPlace": 9,
+      "numSeats": 3,
+      "smoking": 1
+    },
+    {
+      "id": 4,
+      "idPlace": 9,
+      "numSeats": 5,
+      "smoking": 0
+    },
+    {
+      "id": 5,
+      "idPlace": 9,
+      "numSeats": 7,
+      "smoking": 1
+    },
+    {
+      "id": 6,
+      "idPlace": 9,
+      "numSeats": 10,
+      "smoking": 1
+    },
+    {
+      "id": 7,
+      "idPlace": 9,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 8,
+      "idPlace": 9,
+      "numSeats": 10,
+      "smoking": 0
+    },
+    {
+      "id": 9,
+      "idPlace": 9,
+      "numSeats": 8,
+      "smoking": 0
+    },
+    {
+      "id": 10,
+      "idPlace": 9,
       "numSeats": 10,
       "smoking": 0
     }
@@ -269,6 +857,69 @@
       "startTime": "13:00",
       "endTime": "15:00",
       "id": 9
+    },
+    {
+      "idPlace": 6,
+      "idTable": 12,
+      "name": "Milan",
+      "date": "2019-05-30",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "id": 10
+    },
+    {
+      "idPlace": 6,
+      "idTable": 12,
+      "name": "Milan",
+      "date": "2019-05-30",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "id": 11
+    },
+    {
+      "idPlace": 5,
+      "idTable": 5,
+      "name": "m,",
+      "date": "2019-05-16",
+      "startTime": "22:00",
+      "endTime": "23:00",
+      "id": 12
+    },
+    {
+      "idPlace": 5,
+      "idTable": 5,
+      "name": "m,",
+      "date": "2019-05-16",
+      "startTime": "22:00",
+      "endTime": "23:00",
+      "id": 13
+    },
+    {
+      "idPlace": 4,
+      "idTable": 16,
+      "name": "Milan",
+      "date": "2019-05-30",
+      "startTime": "13:00",
+      "endTime": "15:00",
+      "id": 14
+    },
+    {
+      "idPlace": 4,
+      "idTable": 16,
+      "name": "Milan",
+      "date": "2019-05-30",
+      "startTime": "13:00",
+      "endTime": "15:00",
+      "id": 15
+    },
+    {
+      "idPlace": 3,
+      "idTable": 3,
+      "name": "sad",
+      "date": "2019-05-23",
+      "startTime": "13:00",
+      "endTime": "14:59",
+      "id": 16
     }
   ]
 }

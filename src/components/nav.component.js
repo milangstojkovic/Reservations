@@ -35,7 +35,7 @@ export class NavComponent {
               <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown-menu">
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#chechReservation" id="checkRes">Proveri Rezervaciju</a>
+              <a class="nav-link" href="#checkReservation" id="checkRes">Proveri Rezervaciju</a>
             </li>
           </ul>
           <div id="spinner" class="spinner-grow" hidden></div>
