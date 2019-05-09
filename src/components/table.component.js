@@ -1,4 +1,6 @@
 import {ReservationService} from "../services/reservation.service"
+import {last} from "rxjs/operators";
+import { from } from "rxjs";
 
 export class TableComponent {
     constructor(table,num) {
@@ -55,7 +57,7 @@ export class TableComponent {
             reservation.date=resDate;
             reservation.startTime=startTime;
             reservation.endTime=endTime;
-            this._reservationService.writeReservation(reservation);
+            this._reservationService.writeReservation(reservation).then(this._reservationService.getReservations().subscribe(reservations=>this.toogleResAccepted(reservations[reservations.length-1])));
         }
     }
 
@@ -64,15 +66,29 @@ export class TableComponent {
             .filter(res=>(res.idPlace==this._table.idPlace) && (res.idTable==this._table.id) && (res.date==date))
             .forEach(res=>{if(!this.checkTime(res,startTime,endTime))
                             return false}));
+        return true;
     }
 
     checkTime(res,startTime,endTime) {
-        if((startTime>=res.startTime && startTime<=res.endTime)||
-            (endTime>=res.startTime && endTime<=res.endTime)||
+        if((startTime>=res.startTime && startTime<res.endTime)||
+            (endTime>res.startTime && endTime<=res.endTime)||
             (startTime<=res.startTime && endTime>=res.endTime)) {
-                alert("Sto koji pokusavate da rezervisete zauzet je od "+res.startTime+" do "+res.endTime+" tog dana.");
+                $("#myModal").modal();
+                document.getElementById("modal-footer").style.backgroundColor="red";
+                document.getElementById("modal-header").style.backgroundColor="red";
+                document.getElementById("modal-body").innerHTML=`Sto koji pokusavate da rezervisete zauzet je od ${res.startTime} do ${res.endTime} tog dana.
+                <img src="src/resources/failedRes.png" id="modal-img">`;
+                document.getElementById("modal-img").src="src/resources/failedRes.png";
                 return false;
         }
         return true;
+    }
+
+    toogleResAccepted(lastRes) {
+       
+        $("#myModal").modal();
+        document.getElementById("modal-footer").style.backgroundColor="Lime";
+        document.getElementById("modal-header").style.backgroundColor="Lime";
+        document.getElementById("modal-body").innerHTML="Uspesno ste rezervisali sto. ID Vase rezervacije je "+lastRes.id+" <img src='src/resources/acceptedRes.png' id='modal-img'>";
     }
 }

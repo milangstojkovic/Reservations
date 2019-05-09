@@ -11,9 +11,12 @@ export class AlbumComponent {
     draw() {
         const row=document.createElement("div");
         row.className="row";
+        row.id="album-row";
         this._content.appendChild(row);
+        if(this._type!=0) {
         this._placeService.getPlaces().subscribe(places=>places
             .filter(place=>place.type==this._type)
             .forEach(place=>new CardPlaceComponent(place,row).draw()));
+        }
     }
 }
