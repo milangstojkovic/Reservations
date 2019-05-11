@@ -85,10 +85,11 @@ export class TableComponent {
     }
 
     toogleResAccepted(lastRes) {
-       
+        let id=lastRes.id;
+        id++;
         $("#myModal").modal();
         document.getElementById("modal-footer").style.backgroundColor="Lime";
         document.getElementById("modal-header").style.backgroundColor="Lime";
-        document.getElementById("modal-body").innerHTML="Uspesno ste rezervisali sto. ID Vase rezervacije je "+lastRes.id+" <img src='src/resources/acceptedRes.png' id='modal-img'>";
+        document.getElementById("modal-body").innerHTML="Uspesno ste rezervisali sto. ID Vase rezervacije je "+id+" <img src='src/resources/acceptedRes.png' id='modal-img'>";
     }
 }

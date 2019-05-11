@@ -920,6 +920,33 @@
       "startTime": "13:00",
       "endTime": "14:59",
       "id": 16
+    },
+    {
+      "idPlace": 8,
+      "idTable": 6,
+      "name": "Milan",
+      "date": "2019-05-25",
+      "startTime": "14:00",
+      "endTime": "15:59",
+      "id": 17
+    },
+    {
+      "idPlace": 1,
+      "idTable": 6,
+      "name": "Nikola",
+      "date": "2019-06-10",
+      "startTime": "21:00",
+      "endTime": "22:59",
+      "id": 18
+    },
+    {
+      "idPlace": 6,
+      "idTable": 2,
+      "name": "Vladanna",
+      "date": "2019-05-16",
+      "startTime": "15:00",
+      "endTime": "18:59",
+      "id": 19
     }
   ]
 }
